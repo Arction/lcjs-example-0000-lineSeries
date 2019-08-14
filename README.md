@@ -1,4 +1,4 @@
-# Line series
+
 
 This demo application belongs to the set of examples for LightningChart JS, data visualization library for JavaScript.
 
@@ -14,42 +14,6 @@ The demo can be used as an example or a seed project. Local execution requires t
 
 - The application is available at *http://localhost:8080* in your browser, webpack-dev-server provides hot reload functionality.
 
-### Description
-
-*Also known as a Line Graph or Line Chart*
-
-This example shows the basic usage of a line series. The line series is drawn on a Cartesian coordinate system and represents the relationship between two variables. Line series display information as a series of data points connected by straight line segments. They are most often used to visualize the changes in data or reveal trends in a dataset.
-
-This type of series does not contain the visual representation of 'markers' for the data points but only continuously connected line between all of them. Additionally, it allows drawing lines in any direction.
-
-The chart can be created with few simple lines of code:
-
-```javascript
-// Create a new ChartXY.
-const chart = lightningChart().ChartXY()
-
-// Add a line series using default X and Y axes.
-const series = chart.addLineSeries()
-```
-
-The series accepts points in format `{ x: number, y: number }`. Any number of points can be added with a single call.
-
-```javascript
-// Single point.
-series.add({ x: 50, y: 60 })
-
-// Multiple points at once.
-series.add([
-    { x: 55, y: 60 },
-    { x: 60, y: 62},
-    { x: 65, y: 65}
-])
-```
-
-### API links
-
-* XY cartesian chart: [ChartXY][]
-* Line series: [LineSeries][]
 
 
 ### Support
@@ -71,6 +35,3 @@ Direct developer email support can be purchased through a [Support Plan][4] or b
 [2]: https://www.arction.com
 [3]: https://stackoverflow.com/questions/tagged/lightningchart
 [4]: https://www.arction.com/support-services/
-
-[ChartXY]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.0/classes/chartxy.html
-[LineSeries]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.0/classes/lineseries.html
